@@ -1,0 +1,32 @@
+{
+  "project_id": 21,
+  "repo_name": "021-helpdesk-rag-assistant",
+  "title": "Helpdesk RAG Assistant",
+  "theme": "Document Intelligence & RAG",
+  "theme_id": "T03",
+  "level": 2,
+  "level_label": "Applied Intelligence",
+  "prototype_status": "research prototype",
+  "primary_description": "Evidence-backed IT support retrieval",
+  "research_question_proposed": "Can evidence retrieval reduce unsupported claims in common helpdesk answers?",
+  "sample_files": [
+    "sample_docs/vpn.md"
+  ],
+  "source_modules": [
+    "src/helpdesk_rag.py"
+  ],
+  "commands_from_original_readme": [
+    "python src/helpdesk_rag.py index sample_docs --index-dir outputs/index",
+    "python src/helpdesk_rag.py ask outputs/index \"How do I reset my VPN profile?\""
+  ],
+  "docs": [
+    "README.md",
+    "docs/RESEARCH.md",
+    "docs/ARCHITECTURE.md",
+    "docs/DEMO.md",
+    "docs/RESULTS.md"
+  ],
+  "source_origin": "github-level2-20-projects(1).zip",
+  "execution_status": "verified_local_execution",
+  "evidence": "results/execution.json"
+}

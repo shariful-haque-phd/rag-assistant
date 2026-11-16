@@ -1,0 +1,10 @@
+$ python src/helpdesk_rag.py index sample_docs --index-dir outputs/index
+Indexed 1 passages.
+
+
+$ python src/helpdesk_rag.py ask outputs/index "How do I reset my VPN profile?"
+Evidence-backed response:
+
+[1] # VPN Support If the VPN profile becomes corrupted, remove the existing profile from the approved VPN client, restart the client, and import the current profile from the internal software portal. Users must not download VPN profiles from email attachments. If authentication still fails, confirm that multi-factor authentication is working before escalating the ticket.
+Source: sample_docs/vpn.md (chunk 0, score 0.490)
+

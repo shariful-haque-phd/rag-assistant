@@ -1,0 +1,24 @@
+{
+  "id": "021",
+  "status": "executed",
+  "commands": [
+    "python src/helpdesk_rag.py index sample_docs --index-dir outputs/index",
+    "python src/helpdesk_rag.py ask outputs/index \"How do I reset my VPN profile?\""
+  ],
+  "elapsed_seconds": 7.84,
+  "python": "3.13.5",
+  "inputs": [
+    {
+      "file": "sample_docs/vpn.md",
+      "sha256": "336b2d31d20e520c8167d8fb582d5c5fbb61172f1385a56e6b1084cf4177387f"
+    }
+  ],
+  "output_artifacts": [
+    {
+      "file": "results/execution.txt",
+      "sha256": "10c4390006ad9aab9a96d56637f7a73e242a49336d6ff177b69e1884cb11e0bf",
+      "bytes": 627
+    }
+  ],
+  "observations": "Local execution using bundled fixtures; not an external performance evaluation."
+}
